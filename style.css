@@ -1,0 +1,379 @@
+/*FORMATAÇÃO DO BODY*/
+body, html {
+    overflow-x: hidden !important;
+}
+body{
+    width: 100%;
+    min-width: 370px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+/*FORMATAÇÃO DA NAVBAR*/
+.navbarStyle{
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*Text Navbar :hover*/
+#BarraNav ul.styleBarraNav li a:hover, .nav-item .text-light:hover {
+    background-color: #fff;
+    border-radius: 8px;
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+}
+
+/*Menu Hanburguer button*/
+
+/*Remove a borda do botão hamburger*/
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
+/*Remove a borda em focus*/
+.navbar-toggler:focus,
+.navbar-toggler:active, .navbar-toggler:hover {
+    outline: none;
+    box-shadow: none;     
+    background-color: #ffffff;
+}
+/*Ícone fica preto SOMENTE quando o botão estiver em focus*/
+.navbar-toggler:hover .navbar-toggler-icon,
+.navbar-toggler:focus .navbar-toggler-icon {
+    filter: brightness(0);
+}
+/*Deixa o ícone do menu hamburger branco*/
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/*FORMATAÇÃO DA HOME*/
+
+/*Formatação tableH*/
+.tabela-container {
+  width: 80%;
+  overflow-x: auto; /* importante para mobile */
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+/* Tabela */
+.tabela-horarios {
+  width: 80%;
+  border-collapse: collapse;
+  background: #0b0b0b;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.tabela-horarios thead {
+  background: #c40000;
+}
+
+.tabela-horarios th {
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+/* Zebra (linhas alternadas) */
+.tabela-horarios tr, th {
+    padding-left: 0.6rem;
+    border: solid #000 1px;
+}
+.tabela-horarios tr th.S-Aulas {
+    padding-left: 1rem;
+}
+
+/*Text Home Style*/
+.textHomeStyle {
+    color: white;
+}
+.textHomeStyle2 {
+    color: yellow;
+}
+
+/*Section Sobre-Nós*/
+.sobrenos p {
+    font-size: 1.2rem;
+    margin: 1.2rem;
+}
+.ct-aracoiaba {
+    margin-left: 1.2rem;
+}
+
+/*Section Modalidades*/
+.text-title-section {
+    border-bottom: solid #000 2px;
+    margin: 0 auto;
+}
+
+/* CORES PADRÃO */
+:root {
+    --amarelo: #f7c600;
+    --preto: #111;
+    --branco: #fff;
+}
+
+/* SEÇÃO */
+.modalidades {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+/* TÍTULO */
+.titulo-secao {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--amarelo);
+}
+
+.subtitulo {
+    color: #ccc;
+}
+
+/* CARD */
+.card-modalidade {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* IMAGEM */
+.card-modalidade img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+/* CONTEÚDO SOBREPOSTO */
+.card-modalidade .conteudo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 15px;
+
+    background: linear-gradient(to top, rgba(255,255,255,0.6), transparent);
+
+    transform: translateY(55%);
+    transition: 0.6s;
+}
+/* TEXTO */
+.card-modalidade h4 {
+    color: var(--amarelo);
+    margin-bottom: 10px;
+}
+
+.card-modalidade p {
+    font-size: 0.9rem;
+}
+
+/* HOVER */
+.card-modalidade:hover img {
+    transform: scale(1.1);
+}
+
+.card-modalidade:hover .conteudo {
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9))
+}
+.card-ani {
+    transition: 0.5s ease;
+}
+.card-ani:hover {
+    transform: translateY(5%);
+
+}
+/*Formatação da Background*/ 
+.imageHomeStyle{
+    height: 80vh; /*ocupa a tela inteira*/
+    background-image: url("exemploBackgroundHome4K.jpg");
+    background-size: cover;/* ajusta para qualquer tela */
+    background-position: center;/* centraliza */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;/*PARALAX*/
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp-float {
+    position: fixed; /* Faz ele acompanhar o scroll */
+    bottom: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #25D366;
+    color: #fff;
+
+    border-radius: 50%;
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    z-index: 999;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+    color: #fff;
+}
+
+/* Animação pulsante */
+.whatsapp-float::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(37, 211, 102, 0.4);
+    animation: pulse 2s infinite;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    70% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+/* BOTÃO INSTAGRAM */
+.instagram-float {
+    position: fixed;
+    bottom: 90px; /* acima do WhatsApp */
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    color: #fff;
+
+    /* Gradiente oficial do Instagram */
+    background: radial-gradient(circle at 30% 30%, 
+        #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+    z-index: 999;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.instagram-float:hover {
+    transform: scale(1.1);
+}
+
+/* Animação suave */
+.instagram-float::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(214, 41, 118, 0.4);
+    animation: pulseInsta 2s infinite;
+    z-index: -1;
+}
+
+@keyframes pulseInsta {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    70% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+/*RESPONSITIVIDADE TELA*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .responsivo {
+        background: black;
+    }
+    .icone_redes_sociais ul li a{
+        padding: 0 15px 0 0;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .responsivo {
+        background: blue;
+    }
+    .icone_redes_sociais ul li a{
+        padding: 0 15px 0 0;
+    }
+}
+
+/*imageHomeStyle CELULAR*/
+@media (max-width: 768px) {
+  .tabela-horarios th,
+  .tabela-horarios td {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .imageHomeStyle {
+    height: 70vh; /* menor no celular */
+    background-attachment: scroll;/*PARALAX MOB*/
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .responsivo {
+        background: green;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .responsivo {
+        background: #ccc;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1100px) {
+    .responsivo {
+        background: black;
+    }
+}
