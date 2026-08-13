@@ -2,17 +2,38 @@
 body, html {
     overflow-x: hidden !important;
 }
+.logoctb {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+}
 body{
     width: 100%;
     min-width: 370px;
     max-width: 1400px;
     margin: 0 auto;
-
+    font-family: 'text-style-text';
 }
+
+
+/*Formatações de fontes*/
+@font-face {
+  font-family: 'text-style-text';
+  src: url('fonts/Liberation Sans/LiberationSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'text-style-hero';
+  src: url('fonts/Designer/Designer.otf');
+}
+@font-face {
+  font-family: 'text-style-header';
+  src: url('fonts/Bebas/BebasNeue-Regular.woff2');
+}
+
 /*FORMATAÇÃO DA NAVBAR*/
 .navbarStyle{
-    margin: 0 auto;
-    width: 80%;
+    font-family: 'text-style-header';
+    letter-spacing: 2px;
 }
 
 /*Text Navbar :hover*/
@@ -93,7 +114,8 @@ body{
     color: white;
 }
 .textHomeStyle2 {
-    color: yellow;
+    font-family: 'text-style-hero';
+    color: red;
 }
 
 /*Section Sobre-Nós*/
@@ -332,6 +354,12 @@ body{
     .icone_redes_sociais ul li a{
         padding: 0 15px 0 0;
     }
+    .ps-1-style {
+        padding-left: .90rem !important;
+    }
+    .navbarStyle {
+        padding-right: .80rem !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -341,6 +369,12 @@ body{
     }
     .icone_redes_sociais ul li a{
         padding: 0 15px 0 0;
+    }
+    .ps-1-style {
+    padding-left: .90rem !important;
+    }
+    .navbarStyle {
+        padding-right: .80rem !important;
     }
 }
 
@@ -361,6 +395,9 @@ body{
 @media (min-width: 768px) and (max-width: 991.98px) {
     .responsivo {
         background: green;
+    }
+    .ps-1-style {
+    padding-left: .90rem !important;
     }
 }
 
