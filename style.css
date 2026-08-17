@@ -15,6 +15,35 @@ body{
     font-family: 'text-style-text';
 }
 
+/*Paleta de cores*/
+.blackColor {
+    color: #000000 !important;
+}
+.blackBackground {
+    background: #000000 !important;
+}
+
+.redColor {
+    color: #EF0606 !important;
+}
+.redBackground {
+    background: #EF0606 !important;
+}
+
+.swirlColor {
+    color: #D3CCC7 !important;
+}
+.swirlBackground {
+    background: #D3CCC7 !important;
+}
+
+.offwhiteColor {
+    color: #EFEEE8 !important;
+}
+.offwhiteBackground {
+    background: #EFEEE8 !important;
+}
+
 
 /*Formatações de fontes*/
 @font-face {
@@ -27,7 +56,7 @@ body{
 }
 @font-face {
   font-family: 'text-style-header';
-  src: url('fonts/Bebas/BebasNeue-Regular.woff2');
+  src: url('fonts/Bebas/BebasNeue-Regular.ttf');
 }
 
 /*FORMATAÇÃO DA NAVBAR*/
@@ -70,6 +99,21 @@ body{
 
 /*FORMATAÇÃO DA HOME*/
 
+/*formatacao do Hero*/
+.textHeroStyle {
+    color: white;
+    background-color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 150px;
+}
+.textHeroStyle:hover {
+    color: #000000;
+    background-color: #EFEEE8;
+}
+
 /*Formatação tableH*/
 .tabela-container {
   width: 80%;
@@ -111,11 +155,11 @@ body{
 
 /*Text Home Style*/
 .textHomeStyle {
-    color: white;
+    color: #FFFF00;
 }
 .textHomeStyle2 {
     font-family: 'text-style-hero';
-    color: red;
+    color: #EF0606;
 }
 
 /*Section Sobre-Nós*/
@@ -134,11 +178,7 @@ body{
 }
 
 /* CORES PADRÃO */
-:root {
-    --amarelo: #f7c600;
-    --preto: #111;
-    --branco: #fff;
-}
+
 
 /* SEÇÃO */
 .modalidades {
