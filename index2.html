@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Texto Animado</title>
+
+  <style>
+    body{
+      background: #111;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container{
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    #texto{
+      color: #00ff88;
+      transition: opacity 0.5s ease;
+    }
+
+    .fade{
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container"><span id="texto"></span>
+  </div>
+
+  <script>
+    const textos = [
+      "Disciplina",
+      "Força",
+      "Técnica",
+      "Tradição"
+    ];
+
+    let index = 0;
+
+    const elemento = document.getElementById("texto");
+
+    function trocarTexto() {
+
+      // Faz o texto desaparecer
+      elemento.classList.add("fade");
+
+      setTimeout(() => {
+
+        // Troca o texto
+        index = (index + 1) % textos.length;
+        elemento.textContent = textos[index];
+
+        // Faz aparecer novamente
+        elemento.classList.remove("fade");
+
+      }, 400);
+
+    }
+
+    // Troca a cada 2 segundos
+    setInterval(trocarTexto, 1200);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<span id="typed"></span>
+
+<script>
+  new Typed('#typed', {
+    strings: [
+      'Programador',
+      'Designer',
+      'Freelancer'
+    ],
+    typeSpeed: 70,
+    backSpeed: 50,
+    loop: true
+  });
+</script>
+
+</body>
+</html>

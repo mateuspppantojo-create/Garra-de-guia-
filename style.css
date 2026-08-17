@@ -68,7 +68,7 @@ body{
 /*Text Navbar :hover*/
 #BarraNav ul.styleBarraNav li a:hover, .nav-item .text-light:hover {
     background-color: #fff;
-    border-radius: 8px;
+    animation: AniNavBar 1s infinite;
     --bs-text-opacity: 1;
     color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
@@ -112,6 +112,7 @@ body{
 .textHeroStyle:hover {
     color: #000000;
     background-color: #EFEEE8;
+    translate: 0px 5px;
 }
 
 /*Formatação tableH*/
@@ -309,6 +310,7 @@ body{
     z-index: -1;
 }
 
+/*animação para o Instagram e Whatssap*/
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -323,6 +325,19 @@ body{
         opacity: 0;
     }
 }
+
+/*animação para o navBar*/
+@keyframes AniNavBar {
+    0% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
 /* BOTÃO INSTAGRAM */
 .instagram-float {
     position: fixed;
