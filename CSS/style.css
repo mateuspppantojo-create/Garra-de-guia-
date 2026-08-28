@@ -74,7 +74,7 @@ body {
 
 @font-face {
     font-family: 'text-style-hero2';
-    src: url(absender/absender1.ttf);
+    src: url(fonts/absender/absender1.ttf);
 }
 
 /*FORMATAÇÃO DA NAVBAR*/
@@ -148,7 +148,7 @@ body {
 }
 
 .textHeroStyle h1 {
-    font-family: "text-style-hero2", sans-serif;
+    font-family: "text-style-text", sans-serif;
     font-size: clamp(44px, 5vw, 88px);
     line-height: 0.95;
     text-transform: uppercase;
@@ -164,13 +164,15 @@ body {
 .buttonHeroStyle .btn2 {
     color: #D3CCC7;
     border-color: #D3CCC7;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
+    width: 100%;
 }
 
 .buttonHeroStyle .btn1 {
     color: #D3CCC7;
     background-color: #000000;
     border-color: #D3CCC7;
+    width: 100%;
 }
 
 .buttonHeroStyle .btn1:hover {
@@ -189,9 +191,13 @@ body {
     padding-bottom: 2em;
     padding-top: 5em;
 }
-.timeline-item h3, p {
+
+.timeline-item h3,
+p {
     color: #111;
-}/*formatacao de alguns textos*/
+}
+
+/*formatacao de alguns textos*/
 .container-timeline {
     width: 90%;
     max-width: var(--container);
@@ -199,7 +205,7 @@ body {
 }
 
 .section-title {
-    font-family: "text-style-hero2", sans-serif;
+    font-family: "text-style-text", sans-serif;
     font-size: 55px;
     line-height: 1.1;
     text-transform: uppercase;
@@ -232,6 +238,10 @@ body {
 .timeline-item {
     position: relative;
     text-align: center;
+}
+
+.timeline-item h3 {
+    margin-bottom: 0px;
 }
 
 .timeline-icon {
@@ -472,6 +482,12 @@ body {
         --bs-btn-border-radius: var(--bs-border-radius-lg);
     }
 
+    .textHeroStyle .buttonHeroStyle {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
     /*animação para o navBar*/
     @keyframes AniNavBar {
         0% {
@@ -534,6 +550,12 @@ body {
         --bs-btn-border-radius: var(--bs-border-radius-lg);
     }
 
+    .textHeroStyle .buttonHeroStyle {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
     /*animação para o navBar*/
     @keyframes AniNavBar {
         0% {
@@ -546,6 +568,7 @@ body {
             opacity: 1;
         }
     }
+
     /*timeline icon*/
     .timeline {
         grid-template-columns: 1fr;
@@ -628,6 +651,7 @@ body {
     .responsivo {
         background: #ccc;
     }
+
     .timeline-icon {
         grid-row: span 2;
         margin-top: 20px;
@@ -640,6 +664,7 @@ body {
     .responsivo {
         background: black;
     }
+
     .timeline-icon {
         grid-row: span 2;
         margin-top: 20px;
