@@ -3,4 +3,4 @@ Projeto: Site Garra de Guia
 Registro de alterações:
 - Atualização de arquivo existente.
 - Criação de novo artefato.
-- Modificações versionadas utilizando Git.
+- Modificações versionadas utilizando Git.POXJFGIOHSDOIFGOISDFGIOSD
